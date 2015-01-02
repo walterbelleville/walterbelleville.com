@@ -1,0 +1,158 @@
+/*
+ * Globals
+ */
+@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+
+body {
+    font-family: Lato, sans-serif;
+    padding-top: 50px;
+    background-color: #F9F2E7;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+
+    font-weight: normal;
+    color: #333;
+}
+.container {
+	max-width: 750px;
+
+}
+/* Navbar */
+/*.icons{
+    position: absolute;
+    top: 1px;
+}*/
+.nav-div {
+    border-bottom: solid 1px #000000;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #080808;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #1CB5DA;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #080808;
+}
+/*.navbar-inverse .navbar-nav>li .active {
+    color: #cdddeb;
+}*/
+.navbar-inverse {
+    border-bottom: solid 1px #000000;
+    background-image: linear-gradient(to bottom,#F9F2E7 0, #F9F2E7 100%)
+
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: #F9F2E7;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #00b9da;
+}
+/*.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}*/
+
+
+/*#signup-button-front-page {
+    margin-top: 170px;
+    margin-right: 15px;
+}*/
+
+/*#signin-button-front-page {
+
+}*/
+
+a.btn.btn-primary.btn-lg {
+    background-color: #78c406;
+}
+
+.jumbotron {
+    background-color: #00b9da;
+    position: absolute;
+    top: 50px;
+    /*height: 800px;*/
+    width: 100%;
+    border-bottom: solid 1px #000000;
+}
+#signout {
+    margin-left: 45px;
+}
+#welcome {
+    padding: 10px;
+    margin-left: 10px;
+}
+.btn-primary {
+    background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
+}
+.btn-primary:hover {
+    background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
+}
+
+#create-article {
+    margin-top: 20px;
+}
+#update-article {
+    margin-top: 20px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+}
+#signin {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+#signup {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+}
+
+/** About **/
+.about {
+    padding: 40px 15px;
+    text-align: center;
+}
+.error {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.help-block {
+    color: red;
+}
+.submissionMessage {
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 0 2px white;
+  width: 60%;
+}
+.input-form-divs {
+    margin-top: 10px;
+}
+#contact-form-button:hover {
+    background-color: #78c406;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 40px 15px;
+    text-align: center;
+}

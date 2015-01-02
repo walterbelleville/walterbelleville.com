@@ -1,0 +1,58 @@
+<!-- The create contact form view -->
+<section data-ng-controller="FormController">
+    <div class="col-md-11">
+        <div class="container">
+        <h1>Send me a message</h1>
+        <!-- The new article form -->
+        <form data-ng-submit="send()" data-ng-init="init()" novalidate>
+            <div class="input-form-divs">
+                <strong class="help-block" ng-model="errors.firstName" ng-show="errors.firstName">Please enter your First name.</strong>
+                <label for="firstName">First Name:</label>
+                <div>
+                    <input type="text" data-ng-model="firstName" class="form-control" id="firstName" placeholder="First Name" required>
+                </div>
+            </div>
+            <div class="input-form-divs">
+                <strong class="help-block" ng-model="errors.lastName" ng-show="errors.lastName">Please enter your Last name.</strong>
+                <label for="lastName">Last Name:</label>
+                <div>
+                    <input type="text" data-ng-model="lastName" class="form-control" id="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="input-form-divs">
+                <strong class="help-block" ng-model="errors.email" ng-show="errors.email">Please enter your email.</strong>
+                <label for="email">Email:</label>
+                <div>
+                    <input type="text" data-ng-model="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="input-form-divs">
+                <strong class="help-block" ng-model="errors.subject" ng-show="errors.subject">Please enter your subject.</strong>
+                <label for="subject">Subject:</label>
+                <div>
+                    <input type="text" data-ng-model="subject" class="form-control" id="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="input-form-divs">
+                <strong class="help-block" ng-model="errors.emailMessage" ng-show="errors.emailMessage">Please enter your message.</strong>
+                <label for="emailMessage">Message:</label>
+                <div>
+                    <textarea type="text" data-ng-model="emailMessage" class="form-control" id="emailMessage" cols="30" rows="10" placeholder="Message" required></textarea>
+                </div>
+            </div>
+            <div class="input-form-divs">
+                <button type="submit" class="btn btn-lg btn-primary btn-block" id="contact-form-button" value="submit">Submit</button>
+                <!--<input type="submit">-->
+            </div>
+            <!-- The error message element -->
+            <div data-ng-show="error">
+                <strong data-ng-bind="error"></strong>
+            </div>
+            <!-- The success message element -->
+            <div data-ng-show="success">
+                <strong data-ng-bind="success"></strong>
+            </div>
+        </form>
+        </div>
+    </div>
+</section>

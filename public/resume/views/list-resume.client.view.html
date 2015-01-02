@@ -1,0 +1,28 @@
+<!-- The list articles view -->
+<section data-ng-controller="ResumesController" data-ng-init="find()">
+    <div class="container">
+        <h1 class="blog-header"></h1>
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+                <div class="blog-post">
+                    <h1>List of Resumes</h1>
+                <ul>
+                    <!-- The list of resumes -->
+                    <li data-ng-repeat="resume in resumes">
+                        <a class="blog-post-title" data-ng-href="#!/resumes/{{resume._id}}" data-ng-bind="resume.name"></a>
+                        <br>
+                        <small class="blog-post-meta" data-ng-bind="resume.label"></small>
+                        <small>/</small>
+                        <small class="blog-post-meta" data-ng-bind="resume.summary"></small>
+                        <!--<p data-ng-bind="resume.content"></p>-->
+                    </li>
+                </ul>
+                <!-- If there are no articles in the list, suggest the user's create a new resumes -->
+                <div data-ng-hide="!resumes || resumes.length">
+                    No resumes yet, why don't you <a href="/#!/resumes/create">create one</a>?
+                </div>
+                </div><!-- end blog post -->
+            </div><!-- end col-sm-8 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>

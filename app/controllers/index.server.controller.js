@@ -3,17 +3,9 @@
 
 // Create a new 'render' controller method
 exports.render = function(req, res) {
-    // If the session's 'lastVisit' property is set, print it out in the console
-    if (req.session.lastVisit) {
-        console.log(req.session.lastVisit);
-    }
-
-    // Set the session's 'lastVisit' property
-    req.session.lastVisit = new Date();
-
-    // Use the 'response' object to render the 'index' view with a 'title' property
-    res.render('index', {
-        title: 'Hello World',
-        userFullName: req.user ? req.user.fullName : ''
-    });
+	// Use the 'response' object to render the 'index' view with a 'title' and a stringified 'user' properties
+	res.render('index', {
+		title: 'Welcome to my website.',
+		user: JSON.stringify(req.user)
+	});
 };

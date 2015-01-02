@@ -1,0 +1,24 @@
+<!-- The list articles view -->
+<section data-ng-controller="FormController" data-ng-init="find()">
+    <div class="container">
+        <h1 class="blog-header">Messages</h1>
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+                <div class="blog-post">
+                <ul>
+                    <!-- The list of article -->
+                    <li data-ng-repeat="aMessage in formMessages">
+                        <a class="blog-post-title" data-ng-href="#!/messages/{{message._id}}" data-ng-bind=aMessage.subject"></a>
+                        <br>
+                        <small class="blog-post-meta" data-ng-bind="aMessage.firstName"></small>
+                        <small>/</small>
+                        <small class="blog-post-meta" data-ng-bind="aMessage.lastName"></small>
+                        <p data-ng-bind="aMessage.email"></p>
+                        <p data-ng-bind="aMessage.emailMessage"></p>
+                    </li>
+                </ul>
+                </div><!-- end blog post -->
+            </div><!-- end col-sm-8 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>

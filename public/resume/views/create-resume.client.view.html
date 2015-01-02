@@ -1,0 +1,375 @@
+<!-- The create article view -->
+<section data-ng-controller="ResumesController" xmlns="http://www.w3.org/1999/html">
+	<h1>New Resume</h1>
+	<!-- The new article form -->
+	<form data-ng-submit="create()" novalidate>
+		<div>
+			<label for="name">Name</label>
+			<div>
+				<input type="text" data-ng-model="name" class="form-control" id="name" placeholder="Name" required>
+			</div>
+		</div>
+		<div>
+			<label for="label">Label</label>
+			<div>
+				<input type="text" data-ng-model="label" class="form-control" id="label" placeholder="Label">
+			</div>
+		</div>
+		<div>
+			<label for="picture">Picture</label>
+			<div>
+				<input type="text" data-ng-model="picture" class="form-control" id="picture" placeholder="Picture">
+			</div>
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<div>
+				<input type="text" data-ng-model="email" class="form-control" id="email" placeholder="Email">
+			</div>
+		</div>
+		<div>
+			<label for="phone">Phone</label>
+			<div>
+				<input type="text" data-ng-model="phone" class="form-control" id="phone" placeholder="Phone">
+			</div>
+		</div>
+		<div>
+			<label for="website">Website</label>
+			<div>
+				<input type="text" data-ng-model="website" class="form-control" id="website" placeholder="Website">
+			</div>
+		</div>
+		<div>
+			<label for="summary">Summary</label>
+			<div>
+				<input type="text" data-ng-model="summary" class="form-control" id="summary" placeholder="Summary">
+			</div>
+		</div>
+		<div>
+			<label for="city">City</label>
+			<div>
+				<input type="text" data-ng-model="city" class="form-control" id="city" placeholder="City">
+			</div>
+		</div>
+		<div>
+			<label for="postalCode">PostalCode</label>
+			<div>
+				<input type="text" data-ng-model="postalCode" class="form-control" id="postalCode" placeholder="postalCode">
+			</div>
+		</div>
+		<div>
+			<label for="countryCode">CountryCode</label>
+			<div>
+				<input type="text" data-ng-model="countryCode" class="form-control" id="countryCode" placeholder="CountryCode">
+			</div>
+		</div>
+		<div>
+			<label for="region">region</label>
+			<div>
+				<input type="text" data-ng-model="region" class="form-control" id="region" placeholder="region">
+			</div>
+		</div>
+		<div>
+			<label for="profileTwitterName">ProfileTwitterName</label>
+			<div>
+				<input type="text" data-ng-model="profileTwitterName" class="form-control" id="profileTwitterName" placeholder="profileTwitterName">
+			</div>
+		</div>
+		<div>
+			<label for="profileTwitterUser">ProfileTwitterUser</label>
+			<div>
+				<input type="text" data-ng-model="profileTwitterUser" class="form-control" id="profileTwitterUser" placeholder="profileTwitterUser">
+			</div>
+		</div>
+		<div>
+			<label for="profileTwitterUrl">profileTwitterUrl</label>
+			<div>
+				<input type="text" data-ng-model="profileTwitterUrl" class="form-control" id="profileTwitterUrl" placeholder="profileTwitterUrl">
+			</div>
+		</div>
+		<div>
+			<label for="profileLinkedinName">profileLinkedinName</label>
+			<div>
+				<input type="text" data-ng-model="profileLinkedinName" class="form-control" id="profileLinkedinName" placeholder="profileLinkedinName">
+			</div>
+		</div>
+		<div>
+			<label for="profileLinkedinUser">profileLinkedinUser</label>
+			<div>
+				<input type="text" data-ng-model="profileLinkedinUser" class="form-control" id="profileLinkedinUser" placeholder="profileLinkedinUser">
+			</div>
+		</div>
+		<div>
+			<label for="profileLinkedinUrl">profileLinkedinUrl</label>
+			<div>
+				<input type="text" data-ng-model="profileLinkedinUrl" class="form-control" id="profileLinkedinUrl" placeholder="profileLinkedinUrl">
+			</div>
+		</div>
+		<div>
+			<label for="profileGithubName">profileGithubName</label>
+			<div>
+				<input type="text" data-ng-model="profileGithubName" class="form-control" id="profileGithubName" placeholder="profileGithubName">
+			</div>
+		</div>
+		<div>
+			<label for="profileGithubUser">profileGithubUser</label>
+			<div>
+				<input type="text" data-ng-model="profileGithubUser" class="form-control" id="profileGithubUser" placeholder="profileGithubUser">
+			</div>
+		</div>
+		<div>
+			<label for="profileGithubUrl">profileGithubUrl</label>
+			<div>
+				<input type="text" data-ng-model="profileGithubUrl" class="form-control" id="profileGithubUrl" placeholder="profileGithubUrl">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryCompanyOne">workHistoryCompanyOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryCompanyOne" class="form-control" id="workHistoryCompanyOne" placeholder="workHistoryCompanyOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryPositionOne">workHistoryPositionOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryPositionOne" class="form-control" id="workHistoryPositionOne" placeholder="workHistoryPositionOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryWebsiteOne">workHistoryWebsiteOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryWebsiteOne" class="form-control" id="workHistoryWebsiteOne" placeholder="workHistoryWebsiteOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryStartdateOne">workHistoryStartdateOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryStartdateOne" class="form-control" id="workHistoryStartdateOne" placeholder="workHistoryStartdateOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryEnddateOne">workHistoryEnddateOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryEnddateOne" class="form-control" id="workHistoryEnddateOne" placeholder="workHistoryEnddateOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistorysummaryOne">workHistorysummaryOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistorysummaryOne" class="form-control" id="workHistorysummaryOne" placeholder="workHistorysummaryOne" required>
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryHighlightsOne">workHistoryHighlightsOne</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryHighlightsOne" class="form-control" id="workHistoryHighlightsOne" placeholder="workHistoryHighlightsOne">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryCompanyTwo">workHistoryCompanyTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryCompanyTwo" class="form-control" id="workHistoryCompanyTwo" placeholder="workHistoryCompanyTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryPositionTwo">workHistoryPositionTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryPositionTwo" class="form-control" id="workHistoryPositionTwo" placeholder="workHistoryPositionTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryWebsiteTwo">Phone</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryWebsiteTwo" class="form-control" id="workHistoryWebsiteTwo" placeholder="workHistoryWebsiteTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryStartdateTwo">workHistoryStartdateTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryStartdateTwo" class="form-control" id="workHistoryStartdateTwo" placeholder="workHistoryStartdateTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryEnddateTwo">workHistoryEnddateTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryEnddateTwo" class="form-control" id="workHistoryEnddateTwo" placeholder="workHistoryEnddateTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistorysummaryTwo">workHistorysummaryTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistorysummaryTwo" class="form-control" id="workHistorysummaryTwo" placeholder="workHistorysummaryTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryHighlightsTwo">workHistoryHighlightsTwo</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryHighlightsTwo" class="form-control" id="workHistoryHighlightsTwo" placeholder="workHistoryHighlightsTwo">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryCompanyThree">workHistoryCompanyThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryCompanyThree" class="form-control" id="workHistoryCompanyThree" placeholder="workHistoryCompanyThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryPositionThree">workHistoryPositionThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryPositionThree" class="form-control" id="workHistoryPositionThree" placeholder="workHistoryPositionThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryWebsiteThree">workHistoryWebsiteThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryWebsiteThree" class="form-control" id="workHistoryWebsiteThree" placeholder="workHistoryWebsiteThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryStartdateThree">workHistoryStartdateThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryStartdateThree" class="form-control" id="workHistoryStartdateThree" placeholder="workHistoryStartdateThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryEnddateThree">workHistoryEnddateThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryEnddateThree" class="form-control" id="workHistoryEnddateThree" placeholder="workHistoryEnddateThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistorysummaryThree">workHistorysummaryThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistorysummaryThree" class="form-control" id="workHistorysummaryThree" placeholder="workHistorysummaryThree">
+			</div>
+		</div>
+		<div>
+			<label for="workHistoryHighlightsThree">workHistoryHighlightsThree</label>
+			<div>
+				<input type="text" data-ng-model="workHistoryHighlightsThree" class="form-control" id="workHistoryHighlightsThree" placeholder="workHistoryHighlightsThree">
+			</div>
+		</div>
+		<div>
+			<label for="educationInstitution">educationInstitution</label>
+			<div>
+				<input type="text" data-ng-model="educationInstitution" class="form-control" id="educationInstitution" placeholder="educationInstitution">
+			</div>
+		</div>
+		<div>
+			<label for="educationArea">educationArea</label>
+			<div>
+				<input type="text" data-ng-model="educationArea" class="form-control" id="educationArea" placeholder="educationArea">
+			</div>
+		</div>
+		<div>
+			<label for="educationStudyType">educationStudyType</label>
+			<div>
+				<input type="text" data-ng-model="educationStudyType" class="form-control" id="educationStudyType" placeholder="educationStudyType">
+			</div>
+		</div>
+		<div>
+			<label for="educationStartdate">educationStartdate</label>
+			<div>
+				<input type="text" data-ng-model="educationStartdate" class="form-control" id="educationStartdate" placeholder="educationStartdate">
+			</div>
+		</div>
+		<div>
+			<label for="educationEnddate">educationEnddate</label>
+			<div>
+				<input type="text" data-ng-model="educationEnddate" class="form-control" id="educationEnddate" placeholder="educationEnddate">
+			</div>
+		</div>
+		<div>
+			<label for="educationGPA">educationGPA</label>
+			<div>
+				<input type="text" data-ng-model="educationGPA" class="form-control" id="educationGPA" placeholder="educationGPA">
+			</div>
+		</div>
+		<div>
+			<label for="skillsNameOne">skillsNameOne</label>
+			<div>
+				<input type="text" data-ng-model="skillsNameOne" class="form-control" id="skillsNameOne" placeholder="skillsNameOne">
+			</div>
+		</div>
+		<div>
+			<label for="skillsLevelOne">skillsLevelOne</label>
+			<div>
+				<input type="text" data-ng-model="skillsLevelOne" class="form-control" id="skillsLevelOne" placeholder="skillsLevelOne">
+			</div>
+		</div>
+		<div>
+			<label for="skillsKeyswordsOne">skillsKeyswordsOne</label>
+			<div>
+				<input type="text" data-ng-model="skillsKeyswordsOne" class="form-control" id="skillsKeyswordsOne" placeholder="skillsKeyswordsOne">
+			</div>
+		</div>
+		<div>
+			<label for="skillsNameTwo">skillsNameTwo</label>
+			<div>
+				<input type="text" data-ng-model="skillsNameTwo" class="form-control" id="skillsNameTwo" placeholder="skillsNameTwo">
+			</div>
+		</div>
+		<div>
+			<label for="skillsLevelTwo">skillsLevelTwo</label>
+			<div>
+				<input type="text" data-ng-model="skillsLevelTwo" class="form-control" id="skillsLevelTwo" placeholder="skillsLevelTwo">
+			</div>
+		</div>
+		<div>
+			<label for="skillsKeyswordsTwo">skillsKeyswordsTwo</label>
+			<div>
+				<input type="text" data-ng-model="skillsKeyswordsTwo" class="form-control" id="skillsKeyswordsTwo" placeholder="skillsKeyswordsTwo">
+			</div>
+		</div>
+		<div>
+			<label for="language">language</label>
+			<div>
+				<input type="text" data-ng-model="language" class="form-control" id="language" placeholder="language">
+			</div>
+		</div>
+		<div>
+			<label for="fluency">fluency</label>
+			<div>
+				<input type="text" data-ng-model="fluency" class="form-control" id="fluency" placeholder="fluency">
+			</div>
+		</div>
+		<div>
+			<label for="interestsNameOne">interestsNameOne</label>
+			<div>
+				<input type="text" data-ng-model="interestsNameOne" class="form-control" id="interestsNameOne" placeholder="interestsNameOne">
+			</div>
+		</div>
+		<div>
+			<label for="interestsNameTwo">interestsNameTwo</label>
+			<div>
+				<input type="text" data-ng-model="interestsNameTwo" class="form-control" id="interestsNameTwo" placeholder="interestsNameTwo">
+			</div>
+		</div>
+		<div>
+			<label for="interestsNameThree">interestsNameThree</label>
+			<div>
+				<input type="text" data-ng-model="interestsNameThree" class="form-control" id="interestsNameThree" placeholder="interestsNameThree">
+			</div>
+		</div>
+		<div>
+			<label for="referenceName">referenceName</label>
+			<div>
+				<input type="text" data-ng-model="referenceName" class="form-control" id="referenceName" placeholder="referenceName">
+			</div>
+		</div>
+		<div>
+			<label for="reference">reference</label>
+			<div>
+				<input type="text" data-ng-model="reference" class="form-control" id="reference" placeholder="reference">
+			</div>
+		</div>
+		<div>
+            <input type="submit" class="btn btn-lg btn-primary btn-block" id="create-article" value="submit">Submit Article</input>
+			<!--<input type="submit">-->
+		</div>
+		<!-- The error message element -->
+		<div data-ng-show="error">
+			<strong data-ng-bind="error"></strong>
+		</div>
+	</form>
+</section>
