@@ -39,7 +39,7 @@ h6, .h6 {
     color: #080808;
 }
 .navbar-inverse .navbar-brand:hover {
-    color: #1CB5DA;
+    color: #A9071E;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #080808;
@@ -49,14 +49,14 @@ h6, .h6 {
 }*/
 .navbar-inverse {
     border-bottom: solid 1px #000000;
-    background-image: linear-gradient(to bottom,#F9F2E7 0, #F9F2E7 100%)
+    background-image: linear-gradient(to bottom,#F0EBE4 0, #F0EBE4 100%)
 
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    background-color: #F9F2E7;
+    background-color: #F0EBE4;
 }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: #00b9da;
+    color: #A9071E;
 }
 /*.navbar-inverse {
   background-color: #222;
@@ -78,12 +78,40 @@ a.btn.btn-primary.btn-lg {
 }
 
 .jumbotron {
-    background-color: #00b9da;
+    background-color: #E9F2F9;
     position: absolute;
     top: 50px;
     /*height: 800px;*/
     width: 100%;
     border-bottom: solid 1px #000000;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    	   -moz-animation: fadein 2s; /* Firefox < 16 */
+    		-ms-animation: fadein 2s; /* Internet Explorer */
+    		 -o-animation: fadein 2s; /* Opera < 12.1 */
+    			animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 #signout {
     margin-left: 45px;
@@ -92,8 +120,22 @@ a.btn.btn-primary.btn-lg {
     padding: 10px;
     margin-left: 10px;
 }
+#welcome-header {
+    margin-bottom: 20px;
+    text-shadow:
+        1px 0px 1px #ccc, 0px 1px 1px #eee,
+        2px 1px 1px #ccc, 1px 2px 1px #eee,
+        3px 2px 1px #ccc, 2px 3px 1px #eee,
+        4px 3px 1px #ccc, 3px 4px 1px #eee,
+        5px 4px 1px #ccc, 4px 5px 1px #eee,
+        6px 5px 1px #ccc, 5px 6px 1px #eee,
+        7px 6px 1px #ccc;
+}
+#welcome-text {
+    margin-bottom: 25px;
+}
 .btn-primary {
-    background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
+    background-image: linear-gradient(to bottom, #A9071E 0,#A9071E 100%);
 }
 .btn-primary:hover {
     background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
@@ -125,14 +167,45 @@ a.btn.btn-primary.btn-lg {
 
 /** About **/
 .about {
-    padding: 40px 15px;
     text-align: center;
+}
+#about-intro {
+    margin-top: 20px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        	   -moz-animation: fadein 2s; /* Firefox < 16 */
+        		-ms-animation: fadein 2s; /* Internet Explorer */
+        		 -o-animation: fadein 2s; /* Opera < 12.1 */
+        			animation: fadein 2s;
+}
+.about p.lead {
+    margin-top: 45px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    font-size: 1.5em;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+        	   -moz-animation: fadein 6s; /* Firefox < 16 */
+        		-ms-animation: fadein 6s; /* Internet Explorer */
+        		 -o-animation: fadein 6s; /* Opera < 12.1 */
+        			animation: fadein 6s;
+}
+/* Form */
+#form-section {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            	   -moz-animation: fadein 2s; /* Firefox < 16 */
+            		-ms-animation: fadein 2s; /* Internet Explorer */
+            		 -o-animation: fadein 2s; /* Opera < 12.1 */
+            			animation: fadein 2s;
+}
+#form-header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
 }
 .error {
   background-color: rgba(255, 0, 0, 0.2);
 }
 .help-block {
-    color: red;
+    color: #A9071E;
 }
 .submissionMessage {
   background-color: rgba(255,255,255, 0.2);
@@ -153,6 +226,21 @@ a.btn.btn-primary.btn-lg {
 /* Portfolio */
 
 .portfolio {
-    padding: 40px 15px;
     text-align: center;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            	   -moz-animation: fadein 2s; /* Firefox < 16 */
+            		-ms-animation: fadein 2s; /* Internet Explorer */
+            		 -o-animation: fadein 2s; /* Opera < 12.1 */
+            			animation: fadein 2s;
 }
+#portfolio-header {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.img-rounded {
+    margin-bottom: 20px;
+}
+#image-circle {
+    border: solid 1px #000000;
+}
+

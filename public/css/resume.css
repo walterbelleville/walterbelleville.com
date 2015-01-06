@@ -31,12 +31,6 @@ h4 {
 }
 section {
 	margin-top: 30px;
-
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-		   -moz-animation: fadein 2s; /* Firefox < 16 */
-			-ms-animation: fadein 2s; /* Internet Explorer */
-			 -o-animation: fadein 2s; /* Opera < 12.1 */
-				animation: fadein 2s;
 }
 /*li {
 	line-height: 1.8;
@@ -78,7 +72,7 @@ h4 span:first-child {
 	margin-top: 30px;
 }
 #header {
-	background: #1CB5DA;
+	background: #E9F2F9;
 	border-bottom: solid 1px #000000;
 	padding: 50px 0;
 	margin-top: -30px;
@@ -117,9 +111,17 @@ h4 span:first-child {
 #header h2 {
 	color: #333;
 	font-size: 24px;
+	text-shadow:
+	        1px 0px 1px #ccc, 0px 1px 1px #eee,
+	        2px 1px 1px #ccc, 1px 2px 1px #eee,
+	        3px 2px 1px #ccc, 2px 3px 1px #eee,
+	        4px 3px 1px #ccc, 3px 4px 1px #eee,
+	        5px 4px 1px #ccc, 4px 5px 1px #eee,
+	        6px 5px 1px #ccc, 5px 6px 1px #eee,
+	        7px 6px 1px #ccc;
 }
 #content h3 {
-	color: #f1c40f;
+	color: #A9071E;
 	font-size: 26px;
 	margin-top: -4px;
 }
@@ -127,13 +129,48 @@ h4 span:first-child {
 	text-align: right;
 	padding-right: 30px;
 }
+#contact {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+		   -moz-animation: fadein 6s; /* Firefox < 16 */
+			-ms-animation: fadein 6s; /* Internet Explorer */
+			 -o-animation: fadein 6s; /* Opera < 12.1 */
+				animation: fadein 6s;
+}
+#about {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
+}
+#profiles {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
+}
 #profiles .network {
 	text-transform: capitalize;
+}
+#work {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
 }
 #work .position,
 #volunteer .position {
 	font-weight: bold;
 	margin-bottom: 8px;
+}
+#education {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
 }
 #education .area {
 	font-weight: bold;
@@ -152,6 +189,27 @@ h4 span:first-child {
 }
 #publications .website a:before {
 	content: attr(href);
+}
+#skills {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
+}
+#languages {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
+}
+#interests {
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				 -o-animation: fadein 6s; /* Opera < 12.1 */
+					animation: fadein 6s;
 }
 
 @media (min-width: 480px) {

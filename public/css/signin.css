@@ -45,9 +45,9 @@ body {
 }
 
 .btn-primary {
-background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
+background-image: linear-gradient(to bottom,#A9071E 0,#A9071E 100%);
 }
 
 .btn-primary:hover {
-background-color: #78c406;
+    background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
 }

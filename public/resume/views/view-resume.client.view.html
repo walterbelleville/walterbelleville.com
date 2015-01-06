@@ -1,15 +1,16 @@
-<head>
+<!--<head>
     <link rel="stylesheet" href="../../css/resume.css">
-</head>
+</head>-->
 <!-- The resume view -->
 <section data-ng-controller="ResumesController" data-ng-init="findOne()">
-    <h1 data-ng-bind="resume.title"></h1>
-    <!-- Show the editing buttons to the article creator -->
-    <div data-ng-show="authentication.user._id == resume.creator._id">
-        <a href="/#!/resumes/{{resume._id}}/edit">edit</a>
-        <a href="#" data-ng-click="delete();">delete</a>
-    </div>
+    <!--<h1 data-ng-bind="resume.title"></h1>-->
+
     <header id="header">
+            <!-- Show the editing buttons to the article creator -->
+            <div data-ng-show="authentication.user._id == resume.creator._id">
+                <a href="/#!/resumes/{{resume._id}}/edit">edit</a>
+                <a href="#" data-ng-click="delete();">delete</a>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9 col-sm-push-3">
@@ -62,7 +63,7 @@
                         <strong class="network" data-ng-bind="resume.profileTwitterName"></strong>
                         <div class="username">
                             <div class="url">
-                                <a href="resume.profileTwitterUrl" data-ng-bind="resume.profileTwitterUser"></a>
+                                <a href="{{resume.profileTwitterUrl}}" target="_blank">{{resume.profileTwitterUser}}</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,7 @@
                         <strong class="network" data-ng-bind="resume.profileLinkedinName"></strong>
                         <div class="username">
                             <div class="url">
-                                <a href="resume.profileLinkedinUrl" data-ng-bind="resume.profileLinkedinUser"></a>
+                                <a href="{{resume.profileLinkedinUrl}}" target="_blank">{{resume.profileLinkedinUser}}</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +79,7 @@
                         <strong class="network" data-ng-bind="resume.profileGithubName"></strong>
                         <div class="username">
                             <div class="url">
-                                <a href="resume.profileGithubUrl" data-ng-bind="resume.profileGithubUser"></a>
+                                <a href="{{resume.profileGithubUrl}}" target="_blank">{{resume.profileGithubUser}}</a>
                             </div>
                         </div>
                     </div>
