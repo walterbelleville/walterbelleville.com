@@ -113,6 +113,8 @@ a.btn.btn-primary.btn-lg {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
 #signout {
     margin-left: 45px;
 }
@@ -188,6 +190,216 @@ a.btn.btn-primary.btn-lg {
         		 -o-animation: fadein 6s; /* Opera < 12.1 */
         			animation: fadein 6s;
 }
+#tech-used {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 25%;
+    font: italic bold 2.7em Georgia, Serif;
+    font-weight: 700;
+
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+               -moz-animation: fadein 6s; /* Firefox < 16 */
+                -ms-animation: fadein 6s; /* Internet Explorer */
+                 -o-animation: fadein 6s; /* Opera < 12.1 */
+                    animation: fadein 6s;
+}
+.text-container {
+    height: 199px;
+    padding-top: 85px;
+    padding-left: 35px;
+    background-color: #F0EBE4;
+
+    -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.7s; /* Firefox < 16 */
+        -ms-animation: fadein 0.7s; /* Internet Explorer */
+         -o-animation: fadein 0.7s; /* Opera < 12.1 */
+            animation: fadein 0.7s;
+
+}
+.text-container p {
+    color: #000;
+    padding: 15px;
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    border-left: solid 1px #000000;
+    background-color: #AAD1D8;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    font-size: 24px;
+
+}
+#image-container {
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
+}
+
+/* sprit images */
+#css-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-image: url(/img/sprit-logos.jpg)
+    background-position: 0 0px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+
+#html-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -200px 0px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#javascript-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -401px -2px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#python-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -600px 0px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#angular-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: 0px -200px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#bower-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -200px -200px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#php-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -402px -200px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#rpd-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -602px -200px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#mysql-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: 0px -400px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#mongodb-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -200px -400px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#node-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -400px -400px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#vagrant-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -600px -400px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#jquery-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: 0px -600px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#grunt-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -200px -600px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#git-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -401px -600px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+#java-image-rollover{
+    height: 200px;
+    width: 200px;
+    background-position: -602px -600px;
+    border: 1px solid #000;
+    position:relative;
+    display: inline-block;
+    float:left;
+    margin:10px;
+}
+
 /* Form */
 #form-section {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -243,4 +455,5 @@ a.btn.btn-primary.btn-lg {
 #image-circle {
     border: solid 1px #000000;
 }
+
 

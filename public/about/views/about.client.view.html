@@ -1,4 +1,4 @@
-<section>
+<section ng-controller="AboutController">
     <div class="container">
         <div class="about">
             <h1 id="about-intro">Hi, My Name is Walter Belleville.</h1>
@@ -8,5 +8,109 @@
                 for a new media degree, I discovered my passion for programming. </p>
             <img src="/img/me.jpg" alt="Me" id="image-circle" class="img-circle">
         </div>
+        <h1 id="tech-used">Technology I Use</h1>
+
+        <div id="image-container">
+            <div id="css-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnCss()"
+                 ng-mouseleave="imageOffCss()">
+                <div class="text-container" data-ng-show="hoverTextCss">
+                    <p>Css3</p>
+                </div>
+            </div>
+            <div id="html-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnHTML()"
+                 ng-mouseleave="imageOffHTML()">
+                <div class="text-container" data-ng-show="hoverTextHTML">
+                    <p>HTML5</p>
+                </div>
+            </div>
+            <div id="javascript-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnJavascript()"
+                 ng-mouseleave="imageOffJavascript()">
+                <div class="text-container" data-ng-show="hoverTextJavascript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div id="python-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnPython()"
+                 ng-mouseleave="imageOffPython()">
+                <div class="text-container" data-ng-show="hoverTextPython">
+                    <p>Python</p>
+                </div>
+            </div>
+            <div id="angular-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnAngular()"
+                 ng-mouseleave="imageOffAngular()">
+                <div class="text-container" data-ng-show="hoverTextAngular">
+                    <p>Angular</p>
+                </div>
+            </div>
+            <div id="bower-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnBower()"
+                 ng-mouseleave="imageOffBower()">
+                <div class="text-container" data-ng-show="hoverTextBower">
+                    <p>Bower</p>
+                </div>
+            </div>
+            <div id="php-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnPHP()"
+                 ng-mouseleave="imageOffPHP()">
+                <div class="text-container" data-ng-show="hoverTextPHP">
+                    <p>PHP</p>
+                </div>
+            </div>
+            <div id="rpd-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnRD()"
+                 ng-mouseleave="imageOffRD()">
+                <div class="text-container" data-ng-show="hoverTextRD">
+                    <p>Responsive Design</p>
+                </div>
+            </div>
+            <div id="mysql-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnMySQL()"
+                 ng-mouseleave="imageOffMySQL()">
+                <div class="text-container" data-ng-show="hoverTextMySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+            <div id="mongodb-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnMongodb()"
+                 ng-mouseleave="imageOffMongodb()">
+                <div class="text-container" data-ng-show="hoverTextMongodb">
+                    <p>MongoDB</p>
+                </div>
+            </div>
+            <div id="node-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnNode()"
+                 ng-mouseleave="imageOffNode()">
+                <div class="text-container" data-ng-show="hoverTextNode">
+                    <p>NodeJs</p>
+                </div>
+            </div>
+            <div id="vagrant-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnVagrant()"
+                 ng-mouseleave="imageOffVagrant()">
+                <div class="text-container" data-ng-show="hoverTextVagrant">
+                    <p>Vagrant</p>
+                </div>
+            </div>
+            <div id="jquery-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnjQuery()"
+                 ng-mouseleave="imageOffjQuery()">
+                <div class="text-container" data-ng-show="hoverTextjQuery">
+                    <p>jQuery</p>
+                </div>
+            </div>
+            <div id="grunt-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnGrunt()"
+                 ng-mouseleave="imageOffGrunt()">
+                <div class="text-container" data-ng-show="hoverTextGrunt">
+                    <p>Grunt</p>
+                </div>
+            </div>
+            <div id="git-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnGit()"
+                 ng-mouseleave="imageOffGit()">
+                <div class="text-container" data-ng-show="hoverTextGit">
+                    <p>Git</p>
+                </div>
+            </div>
+            <div id="java-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnJava()"
+                 ng-mouseleave="imageOffJava()">
+                <div class="text-container" data-ng-show="hoverTextJava">
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </div><!-- /.container -->
 </section>
