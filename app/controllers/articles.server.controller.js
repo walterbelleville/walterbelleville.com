@@ -16,17 +16,6 @@ var getErrorMessage = function(err) {
 	}
 };
 
-// Create a slug for the formatting of the url
-/*function slugify(text) {
-
-    return text.toString().toLowerCase()
-      .replace(/\s+/g, '-')        // Replace spaces with -
-      .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
-      .replace(/\-\-+/g, '-')      // Replace multiple - with single -
-      .replace(/^-+/, '')          // Trim - from start of text
-      .replace(/-+$/, '');         // Trim - from end of text
-  }*/
-
 // Create a new controller method that creates new articles
 exports.create = function(req, res) {
 	// Create a new article object
@@ -34,12 +23,6 @@ exports.create = function(req, res) {
 
 	// Set the article's 'creator' property
 	article.creator = req.user;
-
-	// Generate the slug
-	/*article.pre('save', function (next) {
-		this.slug = slugify(req.body.title);
-		next();
-	});*/
 
 	// Try saving the article
 	article.save(function(err) {
@@ -122,7 +105,6 @@ exports.delete = function(req, res) {
 
 // Create a new controller middleware that retrieves a single existing article
 exports.articleByID = function(req, res, next, id) {
-	// TODO: use the title of the post for the url id
 	Article.findById(id).populate('creator', 'firstName lastName fullName').exec(function(err, article) {
 			if (err) return next(err);
 			if (!article) return next(new Error('Failed to load resume ' + id));

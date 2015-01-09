@@ -131,7 +131,7 @@ exports.update = function(req, res) {
     resume.interestsNameThree = req.body.interestsNameThree;
     resume.referenceName = req.body.referenceName;
     resume.reference = req.body.reference;
-
+	resume.slug = req.body.slug;
 
     // Try saving the updated article
 	resume.save(function(err) {
@@ -180,6 +180,19 @@ exports.resumeByID = function(req, res, next, id) {
 		// Call the next middleware
 		next();
 	});
+};
+
+// Create a new controller to read by slug
+exports.readBySlug = function(req , res){
+    Resume.findOne(req.query).populate('creator', 'name label summary').exec(function(err, article) {
+    if (err) {
+        return res.status(400).send({
+            message: getErrorMessage(err)
+        });
+        } else {
+        res.json(article);
+        }
+    });
 };
 
 // Create a new controller middleware that is used to authorize an article operation 

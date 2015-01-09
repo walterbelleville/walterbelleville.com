@@ -7,6 +7,9 @@ var users = require('../../app/controllers/users.server.controller'),
 
 // Define the routes module' method
 module.exports = function(app) {
+
+	app.route('/api/resumes/read-slug').get(resumes.readBySlug);
+
 	// Set up the 'resumes' base routes
 	app.route('/api/resumes')
 	   .get(resumes.list)

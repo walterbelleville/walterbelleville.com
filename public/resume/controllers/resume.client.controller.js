@@ -11,8 +11,7 @@ angular.module('resume').controller('ResumesController', ['$scope', '$routeParam
         $scope.create = function() {
         	// Use the form fields to create a new resume $resource object
             var resume = new Resumes({
-                /*title: this.title,
-                content: this.content*/
+
 
                 name: this.name,
                 label: this.label,
@@ -79,13 +78,14 @@ angular.module('resume').controller('ResumesController', ['$scope', '$routeParam
                 interestsNameTwo: this.interestsNameTwo,
                 interestsNameThree: this.interestsNameThree,
                 referenceName: this.referenceName,
-                reference: this.reference
+                reference: this.reference,
+                slug: this.name.toLowerCase().replace(/ /g, '-')
             });
 
             // Use the resume '$save' method to send an appropriate POST request
             resume.$save(function(response) {
             	// If an resume was created successfully, redirect the user to the resume's page
-                $location.path('resumes/' + response._id);
+                $location.path('resumes/' + response.slug);
             }, function(errorResponse) {
             	// Otherwise, present the user with the error message
                 $scope.error = errorResponse.data.message;
@@ -101,17 +101,19 @@ angular.module('resume').controller('ResumesController', ['$scope', '$routeParam
         // Create a new controller method for retrieving a single resume
         $scope.findOne = function() {
         	// Use the resume 'get' method to send an appropriate GET request
-            $scope.resume = Resumes.get({
-                resumeId: $routeParams.resumeId
+            $scope.resume = Resumes.getBySlug({
+                slug: $routeParams.resumeSlug
             });
         };
 
         // Create a new controller method for updating a single resume
         $scope.update = function() {
+            var resume = $scope.resume;
+            resume.slug = resume.name.toLowerCase().replace(/ /g, '-');
         	// Use the resume '$update' method to send an appropriate PUT request
             $scope.resume.$update(function() {
             	// If an resume was updated successfully, redirect the user to the resume's page
-                $location.path('resumes/' + $scope.resume._id);
+                $location.path('resumes/' + resume.slug);
             }, function(errorResponse) {
             	// Otherwise, present the user with the error message
                 $scope.error = errorResponse.data.message;

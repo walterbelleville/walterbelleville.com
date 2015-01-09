@@ -9,7 +9,7 @@
                 <ul>
                     <!-- The list of resumes -->
                     <li data-ng-repeat="resume in resumes">
-                        <a class="blog-post-title" data-ng-href="#!/resumes/{{resume._id}}" data-ng-bind="resume.name"></a>
+                        <a class="blog-post-title" data-ng-href="#!/resumes/{{resume.slug}}" data-ng-bind="resume.name"></a>
                         <br>
                         <small class="blog-post-meta" data-ng-bind="resume.label"></small>
                         <small>/</small>

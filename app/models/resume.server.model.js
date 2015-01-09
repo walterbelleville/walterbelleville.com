@@ -341,6 +341,13 @@ var ResumeSchema = new Schema({
         default: '',
         trim: true
     },
+    slug: {
+        type: String,
+        default: '',
+        trim: true,
+        unique: true,
+        required: 'Slug cannot be blank'
+    },
     creator: {
         type: Schema.ObjectId,
         ref: 'User'

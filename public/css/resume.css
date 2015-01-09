@@ -124,6 +124,9 @@ h4 span:first-child {
 	        6px 5px 1px #ccc, 5px 6px 1px #eee,
 	        7px 6px 1px #ccc;
 }
+#resume-controls {
+	margin-left: 50px;
+}
 #content h3 {
 	color: #A9071E;
 	font-size: 26px;

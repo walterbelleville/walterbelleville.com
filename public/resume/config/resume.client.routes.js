@@ -11,10 +11,10 @@ angular.module('resume').config(['$routeProvider',
 		when('/resumes/create', {
 			templateUrl: 'resume/views/create-resume.client.view.html'
 		}).
-		when('/resumes/:resumeId', {
+		when('/resumes/:resumeSlug', {
 			templateUrl: 'resume/views/view-resume.client.view.html'
 		}).
-		when('/resumes/:resumeId/edit', {
+		when('/resumes/:resumeSlug/edit', {
 			templateUrl: 'resume/views/edit-resume.client.view.html'
 		});
 	}
