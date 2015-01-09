@@ -41,10 +41,22 @@
                     <p>Angular</p>
                 </div>
             </div>
+            <div id="node-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnNode()"
+                 ng-mouseleave="imageOffNode()">
+                <div class="text-container" data-ng-show="hoverTextNode">
+                    <p>NodeJS</p>
+                </div>
+            </div>
             <div id="bower-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnBower()"
                  ng-mouseleave="imageOffBower()">
                 <div class="text-container" data-ng-show="hoverTextBower">
                     <p>Bower</p>
+                </div>
+            </div>
+            <div id="git-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnGit()"
+                 ng-mouseleave="imageOffGit()">
+                <div class="text-container" data-ng-show="hoverTextGit">
+                    <p>Git</p>
                 </div>
             </div>
             <div id="php-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnPHP()"
@@ -71,12 +83,7 @@
                     <p>MongoDB</p>
                 </div>
             </div>
-            <div id="node-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnNode()"
-                 ng-mouseleave="imageOffNode()">
-                <div class="text-container" data-ng-show="hoverTextNode">
-                    <p>NodeJs</p>
-                </div>
-            </div>
+
             <div id="vagrant-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnVagrant()"
                  ng-mouseleave="imageOffVagrant()">
                 <div class="text-container" data-ng-show="hoverTextVagrant">
@@ -95,12 +102,7 @@
                     <p>Grunt</p>
                 </div>
             </div>
-            <div id="git-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnGit()"
-                 ng-mouseleave="imageOffGit()">
-                <div class="text-container" data-ng-show="hoverTextGit">
-                    <p>Git</p>
-                </div>
-            </div>
+
             <div id="java-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnJava()"
                  ng-mouseleave="imageOffJava()">
                 <div class="text-container" data-ng-show="hoverTextJava">

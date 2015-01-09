@@ -8,7 +8,7 @@
                 <ul class="blog-ul">
                     <!-- The list of article -->
                     <li class="blog-list" data-ng-repeat="article in articles">
-                        <a class="blog-post-title" data-ng-href="#!/articles/{{article._id}}" data-ng-bind="article.title"></a>
+                        <a class="blog-post-title" data-ng-href="#!/articles/{{article.slug}}" data-ng-bind="article.title"></a>
                         <br>
                         <small class="blog-post-meta">Posted on</small>
                         <small class="blog-post-meta" data-ng-bind="article.created | date:'MMM d, yyyy'"></small>

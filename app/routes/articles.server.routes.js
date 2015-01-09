@@ -7,6 +7,9 @@ var users = require('../../app/controllers/users.server.controller'),
 
 // Define the routes module' method
 module.exports = function(app) {
+
+	app.route('/api/articles/read-slug').get(articles.readBySlug);
+
 	// Set up the 'articles' base routes 
 	app.route('/api/articles')
 	   .get(articles.list)

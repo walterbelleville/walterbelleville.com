@@ -23,6 +23,13 @@ var ArticleSchema = new Schema({
 		trim: true,
         required: 'Content cannot be blank'
 	},
+	slug: {
+	    type: String,
+	    default: '',
+	    trim: true,
+	    unique: true,
+	    required: 'Slug cannot be blank'
+	},
 	creator: {
 		type: Schema.ObjectId,
 		ref: 'User'

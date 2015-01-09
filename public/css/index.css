@@ -1,9 +1,9 @@
 /*
  * Globals
  */
-@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
 
 body {
     font-family: Lato, sans-serif;
@@ -21,6 +21,10 @@ h6, .h6 {
 
     font-weight: normal;
     color: #333;
+}
+nav {
+    font-family: 'Arvo', serif;
+    font-weight: 500;
 }
 .container {
 	max-width: 750px;
@@ -219,9 +223,15 @@ a.btn.btn-primary.btn-lg {
 .text-container p {
     color: #000;
     padding: 15px;
-    border-top: solid 1px #000000;
-    border-bottom: solid 1px #000000;
-    border-left: solid 1px #000000;
+    border-top: solid 3px #000000;
+    border-bottom: solid 3px #000000;
+    border-left: solid 3px #000000;
+    border-bottom-left-radius: 15px;
+    -moz-border-bottom-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    -moz-border-top-left-radius: 15px;
+    -webkit-border-top-left-radius: 15px;
     background-color: #AAD1D8;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     font-weight: 700;
@@ -234,13 +244,13 @@ a.btn.btn-primary.btn-lg {
         -ms-animation: fadein 6s; /* Internet Explorer */
          -o-animation: fadein 6s; /* Opera < 12.1 */
             animation: fadein 6s;
+
 }
 
 /* sprit images */
 #css-image-rollover{
     height: 200px;
     width: 200px;
-    background-image: url(/img/sprit-logos.jpg)
     background-position: 0 0px;
     border: 1px solid #000;
     position:relative;
@@ -448,6 +458,10 @@ a.btn.btn-primary.btn-lg {
 #portfolio-header {
     margin-top: 20px;
     margin-bottom: 60px;
+}
+#portfolio-more-soon {
+    margin-top: 70px;
+    font-size: 1.5em;
 }
 .img-rounded {
     margin-bottom: 20px;

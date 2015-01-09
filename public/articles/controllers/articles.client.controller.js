@@ -9,18 +9,17 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$routePa
 
         // Create a new controller method for creating new articles
         $scope.create = function() {
-        	// Use the form fields to create a new article $resource object
             var article = new Articles({
+                slug: this.title.toLowerCase().replace(/ /g, '-'),
                 title: this.title,
                 content: this.content
             });
-
-            // Use the article '$save' method to send an appropriate POST request
             article.$save(function(response) {
-            	// If an article was created successfully, redirect the user to the article's page 
-                $location.path('articles/' + response._id);
+                $location.path('articles/' + response.slug);
+
+                $scope.title = '';
+                $scope.content = '';
             }, function(errorResponse) {
-            	// Otherwise, present the user with the error message
                 $scope.error = errorResponse.data.message;
             });
         };
@@ -33,20 +32,19 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$routePa
 
         // Create a new controller method for retrieving a single article
         $scope.findOne = function() {
-        	// Use the article 'get' method to send an appropriate GET request
-            $scope.article = Articles.get({
-                articleId: $routeParams.articleId
+            $scope.article = Articles.getBySlug({
+                slug: $routeParams.articleSlug
             });
-        };
+        }
 
         // Create a new controller method for updating a single article
         $scope.update = function() {
-        	// Use the article '$update' method to send an appropriate PUT request
-            $scope.article.$update(function() {
-            	// If an article was updated successfully, redirect the user to the article's page 
-                $location.path('articles/' + $scope.article._id);
+            var article = $scope.article;
+            article.slug = article.title.toLowerCase().replace(/ /g, '-');
+          //console.log(article);
+            article.$update(function() {
+                $location.path('articles/' + article.slug);
             }, function(errorResponse) {
-            	// Otherwise, present the user with the error message
                 $scope.error = errorResponse.data.message;
             });
         };

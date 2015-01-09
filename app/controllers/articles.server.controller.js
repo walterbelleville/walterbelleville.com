@@ -16,6 +16,17 @@ var getErrorMessage = function(err) {
 	}
 };
 
+// Create a slug for the formatting of the url
+/*function slugify(text) {
+
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')        // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
+      .replace(/\-\-+/g, '-')      // Replace multiple - with single -
+      .replace(/^-+/, '')          // Trim - from start of text
+      .replace(/-+$/, '');         // Trim - from end of text
+  }*/
+
 // Create a new controller method that creates new articles
 exports.create = function(req, res) {
 	// Create a new article object
@@ -23,6 +34,12 @@ exports.create = function(req, res) {
 
 	// Set the article's 'creator' property
 	article.creator = req.user;
+
+	// Generate the slug
+	/*article.pre('save', function (next) {
+		this.slug = slugify(req.body.title);
+		next();
+	});*/
 
 	// Try saving the article
 	article.save(function(err) {
@@ -64,9 +81,11 @@ exports.update = function(req, res) {
 	// Get the article from the 'request' object
 	var article = req.article;
 
+	//article = _.extend(article , req.body);
 	// Update the article fields
 	article.title = req.body.title;
 	article.content = req.body.content;
+	article.slug = req.body.slug;
 
 	// Try saving the updated article
 	article.save(function(err) {
@@ -103,17 +122,30 @@ exports.delete = function(req, res) {
 
 // Create a new controller middleware that retrieves a single existing article
 exports.articleByID = function(req, res, next, id) {
-	// Use the model 'findById' method to find a single article 
+	// TODO: use the title of the post for the url id
 	Article.findById(id).populate('creator', 'firstName lastName fullName').exec(function(err, article) {
-		if (err) return next(err);
-		if (!article) return next(new Error('Failed to load article ' + id));
+			if (err) return next(err);
+			if (!article) return next(new Error('Failed to load resume ' + id));
 
-		// If an article is found use the 'request' object to pass it to the next middleware
-		req.article = article;
+			// If an article is found use the 'request' object to pass it to the next middleware
+			req.article = article;
 
-		// Call the next middleware
-		next();
-	});
+			// Call the next middleware
+			next();
+		});
+};
+
+// Create a new controller to read by slug
+exports.readBySlug = function(req , res){
+    Article.findOne(req.query).populate('creator', 'firstName lastName fullName').exec(function(err, article) {
+    if (err) {
+        return res.status(400).send({
+            message: getErrorMessage(err)
+        });
+        } else {
+        res.json(article);
+        }
+    });
 };
 
 // Create a new controller middleware that is used to authorize an article operation 
