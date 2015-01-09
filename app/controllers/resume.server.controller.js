@@ -168,7 +168,6 @@ exports.delete = function(req, res) {
 
 // Create a new controller middleware that retrieves a single existing article
 exports.resumeByID = function(req, res, next, id) {
-	// TODO: use the title of the resume for the url id
 	// Use the model 'findById' method to find a single article 
 	Resume.findById(id).populate('creator', 'name label summary').exec(function(err, resume) {
 		if (err) return next(err);
