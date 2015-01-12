@@ -82,6 +82,14 @@ module.exports = function(grunt) {
 				src: 'public/modules/**/*.css'
 			}
 		},
+		// Configure the grunt-contrib-cssmin
+		cssmin: {
+		  target: {
+		    files: {
+		      'public/css/index.min.css': ['public/css/index.css', 'public/css/dashboard.css']
+		    }
+		  }
+		},
 		// Configure the grunt-contrib-watch task
 		watch: {
 			js: {
@@ -122,9 +130,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-protractor-runner');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-node-inspector');
+
 
 	// Create the 'default' Grunt task
 	grunt.registerTask('default', ['env:dev', 'lint', 'concurrent:dev']);
@@ -137,4 +147,7 @@ module.exports = function(grunt) {
 
 	// Create the 'lint' Grunt task
 	grunt.registerTask('lint', ['jshint', 'csslint']);
+
+	// Create the 'cssmin' Grunt task
+	grunt.registerTask('mincss', ['cssmin']);
 };

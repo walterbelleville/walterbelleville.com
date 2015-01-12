@@ -33,12 +33,14 @@
                 <div class="row">
                 <div class="col-sm-6">
                     <strong>Email</strong>
-                    <div class="email" data-ng-bind="resume.email"></div>
+                    <div class="email">
+                        <a href="mailto:{{resume.email}}?Subject=Hello%20Nice%20Site" data-ng-bind="resume.email"></a>
+                    </div>
                 </div>
-                <div class="col-sm-6">
+                <!--<div class="col-sm-6">
                     <strong>Phone</strong>
                     <div class="phone" data-ng-bind="resume.phone"></div>
-                </div>
+                </div>-->
                 <div class="col-sm-6">
                     <strong>Website</strong>
                     <div class="website">
