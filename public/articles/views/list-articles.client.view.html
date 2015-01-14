@@ -14,7 +14,7 @@
                         <small class="blog-post-meta" data-ng-bind="article.created | date:'MMM d, yyyy'"></small>
                         <small class="blog-post-meta">by</small>
                         <small class="blog-post-meta" data-ng-bind="article.creator.fullName"></small>
-                        <p data-ng-bind="article.content"></p>
+                        <p style="white-space: pre-line;">{{article.content | limitTo: 500}}{{article.content.length > 500 ? ' . . . Read more' : ''}}</p>
                     </li>
                 </ul>
                 <!-- If there are no articles in the list, suggest the user's create a new article -->

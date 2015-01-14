@@ -201,9 +201,10 @@ a.btn.btn-primary.btn-lg {
     height: 60px;
 }
 #signin {
-    position: absolute;
-    bottom: 0;
-    left: 25px;
+    visibility: hidden;
+    /*position: absolute;
+        bottom: 0;
+        left: 75px;*/
 }
 #signup {
     position: absolute;
@@ -850,6 +851,7 @@ a.btn.btn-primary.btn-lg {
 	#actions {
 		display: none;
 	}
+
 }
 @media (min-width: 480px) {
 	.strike-through {
@@ -874,5 +876,17 @@ a.btn.btn-primary.btn-lg {
 		padding-left: 20px;
 		right: 0;
 	}
+
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #tech-used {
+        margin-left: 5%;
+    }
+    #image-container {
+        margin-left: 14%;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #000000;
+    }
 }
 
