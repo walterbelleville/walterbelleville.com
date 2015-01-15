@@ -50,8 +50,8 @@ exports.create = function(req, res) {
         var transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'walterbell2331',
-                pass: 'corkdog69'
+                user: 'buglovefun',
+                pass: 'lovefuntimes43'
             }
         });
 
