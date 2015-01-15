@@ -1,26 +1,26 @@
 <section ng-controller="AboutController">
     <div class="container">
         <div class="about">
-            <h1 id="about-intro">Hi, My Name is Walter Belleville.</h1>
-            <p class="lead">This is where I write about tech, show off my work, and explore ideas. I enjoy playing with
-                innovative web technologies and building beautiful websites.  I currently am located in North San Diego County.
+            <h1 id="about-intro">This is where I write about tech, show off my work, and explore ideas.</h1>
+            <p class="lead"> I enjoy playing with
+                innovative web technologies and building web applications.  I currently am located in North San Diego County.
                 I love learning new things and enjoy taking on new challenges to become a better developer. When studying
-                for a new media degree, I discovered my passion for programming. </p>
+                for a new media degree, I discovered my passion for programming.</p>
             <img src="/img/me.jpg" alt="Me" id="image-circle" class="img-circle">
         </div>
         <h1 id="tech-used">Technology I Use</h1>
 
         <div id="image-container">
-            <div id="css-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnCss()"
-                 ng-mouseleave="imageOffCss()">
-                <div class="text-container" data-ng-show="hoverTextCss">
-                    <p>Css3</p>
-                </div>
-            </div>
             <div id="html-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnHTML()"
                  ng-mouseleave="imageOffHTML()">
                 <div class="text-container" data-ng-show="hoverTextHTML">
-                    <p>HTML5</p>
+                    <p>HTML5 & CSS3</p>
+                </div>
+            </div>
+            <div id="laravel-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnLaravel()"
+                 ng-mouseleave="imageOffLaravel()">
+                <div class="text-container" data-ng-show="hoverTextLaravel">
+                    <p>Laravel</p>
                 </div>
             </div>
             <div id="javascript-image-rollover" style="background-image: url({{bg1}});" ng-mouseenter="imageOnJavascript()"
@@ -110,9 +110,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div><!-- /.container -->
+
 </section>

@@ -2,25 +2,28 @@
 'use strict';
 
 // Create the about controller
-angular.module('about').controller('AboutController', ['$scope',
-    function ($scope) {
+angular.module('about').controller('AboutController', ['$scope', 'Authentication',
+    function ($scope, Authentication) {
+        // Expose the authentication service
+        $scope.authentication = Authentication;
+
         $scope.aboutMe = 'About Me';
 
         $scope.bg1 = "/img/sprit-logos.jpg" // this is the default image.
 
-        // Css image rollover
-        $scope.imageOnCss = function() {
-            this.hoverTextCss = true;
-        };
-        $scope.imageOffCss = function() {
-            this.hoverTextCss = false;
-        }
-        // HTML rollover
+        // HTML & Css image rollover
         $scope.imageOnHTML = function() {
             this.hoverTextHTML = true;
         };
         $scope.imageOffHTML = function() {
             this.hoverTextHTML = false;
+        }
+        // Laravel rollover
+        $scope.imageOnLaravel = function() {
+            this.hoverTextLaravel = true;
+        };
+        $scope.imageOffLaravel = function() {
+            this.hoverTextLaravel = false;
         }
         // Javascript rollover
         $scope.imageOnJavascript = function() {

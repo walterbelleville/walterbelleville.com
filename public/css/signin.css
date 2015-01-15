@@ -45,9 +45,14 @@ body {
 }
 
 .btn-primary {
-background-image: linear-gradient(to bottom,#A9071E 0,#A9071E 100%);
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
 }
-
+.btn-primary:focus {
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
+}
+.btn-primary:active {
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
+}
 .btn-primary:hover {
     background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
 }

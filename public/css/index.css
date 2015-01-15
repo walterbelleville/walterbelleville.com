@@ -8,11 +8,12 @@
 body {
     background: #fff;
     font-family: Lato, sans-serif;
+    letter-spacing: 1px;
     margin: 0 0 80px;
     padding-top: 50px;
 }
 a {
-	color: #2ecc71;
+	color: #00A1CB;
 }
 a:focus,
 a:hover {
@@ -33,7 +34,6 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
     margin-top: 0;
-
     font-weight: normal;
     color: #333;
 }
@@ -59,7 +59,6 @@ section {
 }
 .container {
 	max-width: 750px;
-
 }
 .col-sm-6 {
 	margin-bottom: 10px;
@@ -69,6 +68,9 @@ section {
 }
 .col-sm-12 + .col-sm-12 {
 	margin-top: 30px;
+}
+.navbar-inverse .navbar-toggle {
+    background-color: #333333;
 }
 /* Navbar */
 /*.icons{
@@ -94,7 +96,6 @@ section {
 .navbar-inverse {
     border-bottom: solid 1px #000000;
     background-image: linear-gradient(to bottom,#F0EBE4 0, #F0EBE4 100%)
-
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     background-color: #F0EBE4;
@@ -126,6 +127,8 @@ a.btn.btn-primary.btn-lg {
     position: absolute;
     top: 50px;
     /*height: 800px;*/
+    padding-left: 10%;
+    padding-right: 10%;
     width: 100%;
     border-bottom: solid 1px #000000;
 
@@ -167,21 +170,28 @@ a.btn.btn-primary.btn-lg {
     margin-left: 10px;
 }
 #welcome-header {
-    margin-bottom: 20px;
-    text-shadow:
+    font-weight: 500;
+    margin-bottom: 50px;
+    /*text-shadow:
         1px 0px 1px #ccc, 0px 1px 1px #eee,
         2px 1px 1px #ccc, 1px 2px 1px #eee,
         3px 2px 1px #ccc, 2px 3px 1px #eee,
         4px 3px 1px #ccc, 3px 4px 1px #eee,
         5px 4px 1px #ccc, 4px 5px 1px #eee,
         6px 5px 1px #ccc, 5px 6px 1px #eee,
-        7px 6px 1px #ccc;
+        7px 6px 1px #ccc;*/
 }
 #welcome-text {
     margin-bottom: 25px;
 }
 .btn-primary {
-    background-image: linear-gradient(to bottom, #A9071E 0,#A9071E 100%);
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
+}
+.btn-primary:focus {
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
+}
+.btn-primary:active {
+    background-image: linear-gradient(to bottom, #7c0311 0,#7c0311 100%);
 }
 .btn-primary:hover {
     background-image: linear-gradient(to bottom,#90c41d 0,#90c41d 100%);
@@ -229,11 +239,11 @@ a.btn.btn-primary.btn-lg {
     margin-bottom: 50px;
     line-height: 1.7;
     font-size: 1.5em;
-    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-        	   -moz-animation: fadein 6s; /* Firefox < 16 */
-        		-ms-animation: fadein 6s; /* Internet Explorer */
-        		 -o-animation: fadein 6s; /* Opera < 12.1 */
-        			animation: fadein 6s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        	   -moz-animation: fadein 2s; /* Firefox < 16 */
+        		-ms-animation: fadein 2s; /* Internet Explorer */
+        		 -o-animation: fadein 2s; /* Opera < 12.1 */
+        			animation: fadein 2s;
 }
 #tech-used {
     margin-top: 100px;
@@ -242,11 +252,11 @@ a.btn.btn-primary.btn-lg {
     font: italic bold 2.7em Georgia, Serif;
     font-weight: 700;
 
-    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-               -moz-animation: fadein 6s; /* Firefox < 16 */
-                -ms-animation: fadein 6s; /* Internet Explorer */
-                 -o-animation: fadein 6s; /* Opera < 12.1 */
-                    animation: fadein 6s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+               -moz-animation: fadein 2s; /* Firefox < 16 */
+                -ms-animation: fadein 2s; /* Internet Explorer */
+                 -o-animation: fadein 2s; /* Opera < 12.1 */
+                    animation: fadein 2s;
 }
 .text-container {
     height: 199px;
@@ -280,31 +290,31 @@ a.btn.btn-primary.btn-lg {
 
 }
 #image-container {
-    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 6s; /* Firefox < 16 */
-        -ms-animation: fadein 6s; /* Internet Explorer */
-         -o-animation: fadein 6s; /* Opera < 12.1 */
-            animation: fadein 6s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 
 }
 
 /* sprit images */
-#css-image-rollover{
+#html-image-rollover{
     height: 200px;
     width: 200px;
     background-position: 0 0px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
     margin:10px;
 }
 
-#html-image-rollover{
+#laravel-image-rollover{
     height: 200px;
     width: 200px;
     background-position: -200px 0px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -314,7 +324,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -401px -2px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -323,8 +333,8 @@ a.btn.btn-primary.btn-lg {
 #python-image-rollover{
     height: 200px;
     width: 200px;
-    background-position: -600px 0px;
-    border: 1px solid #000;
+    background-position: -602px 0px;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -334,7 +344,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: 0px -200px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -344,7 +354,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -200px -200px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -354,7 +364,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -402px -200px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -364,7 +374,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -602px -200px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -374,7 +384,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: 0px -400px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -384,7 +394,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -200px -400px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -394,7 +404,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -400px -400px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -404,7 +414,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -600px -400px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -414,7 +424,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: 0px -600px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -424,7 +434,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -200px -600px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -434,7 +444,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -401px -600px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -444,7 +454,7 @@ a.btn.btn-primary.btn-lg {
     height: 200px;
     width: 200px;
     background-position: -602px -600px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     position:relative;
     display: inline-block;
     float:left;
@@ -520,11 +530,11 @@ a.btn.btn-primary.btn-lg {
                 		 -o-animation: fadein 2s; /* Opera < 12.1 */
                 			animation: fadein 2s;
 }
-.blog-masthead {
+/*.blog-masthead {
     background-color: #428bca;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
     box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-}
+}*/
 
 /* Nav links */
 .blog-nav-item {
@@ -708,14 +718,14 @@ a.btn.btn-primary.btn-lg {
 	font-family: 'Arimo', sans-serif;
 	color: #333;
 	font-size: 24px;
-	text-shadow:
+	/*text-shadow:
 	        1px 0px 1px #ccc, 0px 1px 1px #eee,
 	        2px 1px 1px #ccc, 1px 2px 1px #eee,
 	        3px 2px 1px #ccc, 2px 3px 1px #eee,
 	        4px 3px 1px #ccc, 3px 4px 1px #eee,
 	        5px 4px 1px #ccc, 4px 5px 1px #eee,
 	        6px 5px 1px #ccc, 5px 6px 1px #eee,
-	        7px 6px 1px #ccc;
+	        7px 6px 1px #ccc;*/
 }
 #resume-controls {
 	margin-left: 50px;
@@ -730,35 +740,35 @@ a.btn.btn-primary.btn-lg {
 	padding-right: 30px;
 }
 #contact {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-		   -moz-animation: fadein 6s; /* Firefox < 16 */
-			-ms-animation: fadein 6s; /* Internet Explorer */
-			 -o-animation: fadein 6s; /* Opera < 12.1 */
-				animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+		   -moz-animation: fadein 2s; /* Firefox < 16 */
+			-ms-animation: fadein 2s; /* Internet Explorer */
+			 -o-animation: fadein 2s; /* Opera < 12.1 */
+				animation: fadein 2s;
 }
 #about {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #profiles {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #profiles .network {
 	text-transform: capitalize;
 }
 #work {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #work .position,
 #volunteer .position {
@@ -766,11 +776,11 @@ a.btn.btn-primary.btn-lg {
 	margin-bottom: 8px;
 }
 #education {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #education .area {
 	font-weight: bold;
@@ -791,25 +801,25 @@ a.btn.btn-primary.btn-lg {
 	content: attr(href);
 }
 #skills {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #languages {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 #interests {
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 6s; /* Firefox < 16 */
-				-ms-animation: fadein 6s; /* Internet Explorer */
-				 -o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadein 2s; /* Firefox < 16 */
+				-ms-animation: fadein 2s; /* Internet Explorer */
+				 -o-animation: fadein 2s; /* Opera < 12.1 */
+					animation: fadein 2s;
 }
 
 @media (min-width: 1200px) {
@@ -885,8 +895,8 @@ a.btn.btn-primary.btn-lg {
     #image-container {
         margin-left: 14%;
     }
-    .navbar-inverse .navbar-toggle .icon-bar {
+    /*.navbar-inverse .navbar-toggle .icon-bar {
         background-color: #000000;
-    }
+    }*/
 }
 
